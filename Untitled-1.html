@@ -5,49 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
     <div class="container">
         <div class="main-menu">
             <img  src="images/menubar.jpg" class="menuicon">
-            <img  src="images/newgmaillogo.jpg" class="gmail">
-
+            <img  src="images/newgmaillogo.jpg" class="gmail"> 
+            <img src="images/search.jpg" class="search-icon">
+            <input type="search" placeholder="search mail" class="search-btn">
+            <img src="images/close.jpg" class="close-icon">
+            <img src="images/showopt.png" class="show-opt">
+            <div class="right">
+                <img src="images/help.jpg"  class="help">
+                <img src="images/settings.jpg" class="help">
+                <img src="images/9dots.jpg" class="help ">
+                <img src="images/p.png" class="help profile">
+            </div>
+        <div class="leftside">
+            <div class="select leftdiv" >
+            <img src="images/compose.jpg" class="compose">
+            </div>
+            <div class="select middlediv" >
+                <div>
+                <img src="images/checkbox.png" class="help"><img src="images/more.png" class="arrow">
+                <img src="images/refresh.png" class="help">
+                <img src="images/3dot.png" class="help">
+                </div>
+                <div>
+                    jjjjjjjjjjjjjjj
+                </div>
+            </div>
+            <div class="select rightdiv">
+             right
+            </div>
         </div>
-        <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-            <a href="#"><span><i class="material-icons">info</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;about</span></a><br>
-            <a href="#"><i class="material-icons">spa</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;services</a></span>
-            </a><br>
-            <a href="#"><i class="material-icons">monetization_on</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;clients</span></a><br>
-            <a href="#"><i class="material-icons">email</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;contact<span></a>
-        </div>
+            <div id="mySidebar" class="sidebar">
+                <button class="navbutton"><img src="images/inbox.png" class="material-icons">inbox</button>
+                <button class="navbutton"><img src="images/grade_black_20dp.png" class="material-icons"> starred</button>
+                <button class="navbutton"><img src="images/snooze.png" class="material-icons"> snooze</button>
+                <button class="navbutton"><img src="images/sent.png" class="material-icons"> sent</button>
+                <button class="navbutton"><img src="images/draft.png" class="material-icons"> draft</button>
+                <button class="navbutton"><img src="images/more.png" class="material-icons">more</button>
+            </div>
+
     </div>
-
-    <div id="main">
-        <h2>Open/Collapse Sidebar on Hover</h2>
-        <p>Hover over any part of the sidebar to open the it.</p>
-        <p>To close the sidebar, move your mouse out of the sidebar.</p>
-    </div>
-
-    <script>
-        var mini = true;
-
-        function toggleSidebar() {
-            if (mini) {
-                console.log("opening sidebar");
-                document.getElementById("mySidebar").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-                this.mini = false;
-            } else {
-                console.log("closing sidebar");
-                document.getElementById("mySidebar").style.width = "50px";
-                document.getElementById("main").style.marginLeft = "50px";
-                this.mini = true;
-            }
-        }
-    </script>
-
 </body>
 
 </html>
