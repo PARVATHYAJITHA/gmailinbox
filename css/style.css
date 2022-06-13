@@ -2,6 +2,9 @@
     padding:0;
     margin:0;
 }
+.gmail-div{
+    float: left;
+}
 .menuicon{
     width: 22px;  
     vertical-align: middle;
@@ -16,6 +19,7 @@
     padding:5px;
     vertical-align: middle;
     margin-bottom: 10px;
+    display:inline-table;
 }
 body {
     font-family: "Lato", sans-serif;
@@ -57,7 +61,7 @@ body {
     border:none;
 }
 .search-icon{
-    width:20px;
+    width:10px;
     left:40px;
     top:4px;
     position:relative;
@@ -183,12 +187,12 @@ a{
     overflow-y: hidden;  
 }
 .meeting{
-    padding:0;
     width: 250px;
     position: relative;
     overflow-x: hidden;
     background-color: aqua;
     overflow-y: hidden;
+    margin: 10px 0;
 }
 .sidebar:hover{
     overflow-y: scroll;
@@ -243,7 +247,7 @@ a{
 }
 .middlediv{
 width:100%;
-border: 1px solid black;
+border: 1px ridge rgb(198, 199, 196);
 vertical-align:top;
 }
 .center{
