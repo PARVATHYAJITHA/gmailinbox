@@ -1,26 +1,9 @@
 *{
     padding:0;
     margin:0;
+    overflow: hidden;
 }
-.gmail-div{
-    float: left;
-}
-.menuicon{
-    width: 22px;  
-    vertical-align: middle;
-    padding:20px 15px 20px 20px; 
-}
-.gmail{
-    width:110px;
-    padding-right: 45px;
-    vertical-align: middle;
-}
-.main-menu{
-    padding:5px;
-    vertical-align: middle;
-    margin-bottom: 10px;
-    display:inline-table;
-}
+
 body {
     font-family: "Lato", sans-serif;
 }
@@ -29,27 +12,91 @@ body {
     width:100%;
 }
 .compose {
-    width:150px;
+    width:148px;
     border-radius: 25%;
-    vertical-align: bottom;
+    
+
+}
+
+.main-container{
+    width:100%;
+}
+.head-container{
+    display:flex;
+	direction:row;
+
+}
+.left-head{
+    float: left;
+    vertical-align: middle;
+    padding: 20px;
+}
+.menuicon{
+    width:20px;
+    padding-right: 10px;
+}
+.gmail{
+    width:105px;
+    padding-right: 50px;
+}
+.middle-head{
+    float: left;
+	width:50%;
+    position:relative;
+    padding-right:30px;
+    margin-top:10px;
+    padding-left: 20px;
+}
+.search-btn{
+    padding:15px 20px 15px 60px ;
+    width:96%;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    vertical-align: middle;
+    position:absolute;
+}
+.search-icon{
+    width:20px;
+    top:20px;
+    left:20px;
+    position:relative;
+}
+.show-opt{
+    width:20px;
+    top:20px;
+    right:60px;
+    position:absolute;
+}
+.right-head{
+ 
+    float:right;
+    vertical-align: middle;
+    right:0px;
+    top:0px;
+    position: fixed;
+    margin-left:20px;
+}
+.right-pics{
+    width:20px;
+    margin-left:30px;
+    margin-top:20px;
+
 }
 .right{
     float:right;
     vertical-align: middle;
     padding-top: 8px;
     padding-right: 8px;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+.msg-head{
+    padding-right: 250px;
 }
 .search-itm{
     background-color: rgb(119, 154, 184);
-}
-.search-btn{
-    padding:15px 20px 15px 60px ;
-    width:720px;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-    background-color: #f8f8f8;
-    vertical-align: middle;
 }
 .search-btn:focus{
     background-color: white;
@@ -60,36 +107,27 @@ body {
 .search-btn:hover{
     border:none;
 }
-.search-icon{
+
+.more{
     width:10px;
-    left:40px;
-    top:4px;
-    position:relative;
-}
-.close-icon{
-    width:15px;
-    top: 3px;
-    right:85px;
-    position:relative;
-}
-.show-opt{
-position:relative;
-top:4px;
-right:65px;
-width:20px;
+    margin-left: 8px;
 }
 .in-menu-rit{
     float: right;
     vertical-align: middle;
 }
 .help{
-    width:22px;
+    width:21px;
     vertical-align: middle;
     margin-left:20px ;
     
 }
 .vmiddle{
     vertical-align: middle;
+}
+.toggle{
+    width:20px;
+    margin-left:18px ;
 }
 a{
     color:grey;
@@ -98,12 +136,11 @@ a{
 }
 .msg-toggle{
     padding:10px 0;
-    width:20px;
+    border: 1px ridge rgb(218, 213, 213);
 }
 .arrow{
-    width:22px;
-    border-radius:45px ;
-    vertical-align: middle;
+    width:40px;
+    margin-right: 3px;
 }
 .profile{
     width:30px;
@@ -116,12 +153,17 @@ a{
     width:20px;
     padding-right: 10px;
 }
+.heading{
+    padding-left:10px;
+    font-size: 15px;
+}
 .primary ,.social ,.promotion{
     border-bottom:1px transparent grey;
     float:left;
-    padding:20px 160px 10px 70px;
+    padding:20px 150px 10px 50px;
     vertical-align: middle;
     font: 16px;
+    text-align:center;
     background-color: white;
 }
 .primary{
@@ -129,31 +171,29 @@ a{
     background-repeat: no-repeat;
     background-position: 8% center;
     border:none;
-    padding: 20px 200px 25px 70px;
+
 }
 .social{
     background-image: url("back/socia-black.png");
     background-repeat: no-repeat;
     background-position: 8% center;
     border:none;
-    padding:20px 200px 25px 70px;;
 }
 .promotion{
     background-image: url("back/promoblack.png");
     background-repeat: no-repeat;
     background-position: 8% center;
     border:none;
-    padding:20px 200px 25px 70px;;
 }
 .promotion:focus{
     background-image:url("back/progreen.png");
     color:green;
-    border-bottom: 1px solid green;
+    border-bottom: 4px solid green;
 }
 .social:focus{
     background-image:url("back/social.png");
     color: blue;
-    border-bottom: 1px solid blue;
+    border-bottom: 4px solid blue;
 }
 .primary a{
     padding-left:20px;
@@ -161,7 +201,7 @@ a{
 .primary:focus{
     background-image: url("back/inbox.png");
     color:red;
-    border-bottom: 2px solid red;
+    border-bottom: 4px solid red;
 
 }
 .primary a:focus{
@@ -174,29 +214,28 @@ a{
     width: 250px;
     position: fixed;
     overflow-x: hidden;
-    background-color: aqua;
     overflow-y: hidden;  
 }
 
 .sidebar {
-    padding:0;
+    padding-top:1px;
     height:28%;
     width: 250px;
     position: relative;
     overflow-x: hidden;
-    background-color: aqua;
     overflow-y: hidden;  
+    margin-top: 15px;
 }
 .meeting{
     width: 250px;
     position: relative;
     overflow-x: hidden;
-    background-color: aqua;
     overflow-y: hidden;
-    margin: 10px 0;
+    margin-bottom: 25px;
 }
-.meet-hand{
-    margin:10px;
+.meet-hang{
+    margin:8px 0 8px 25px;
+    font-size: 13px;
 }
 .sidebar:hover{
     overflow-y: scroll;
@@ -204,14 +243,14 @@ a{
 .round{
     border: 1px solid black;
     border-radius: 40px;
+    width:30px;
 }
 .sidebar  button, .meeting  button{
-
     text-decoration: none;
     font-size: 15px;
     color: black;
-    width: 100%;
-    padding:6px 40px 6px 8px;
+    width: 95%;
+    padding:6px 40px 6px 12px;
     text-align: left;
     vertical-align:middle;
     border: none;
@@ -219,18 +258,16 @@ a{
     border-bottom-right-radius: 23px;
     border-top-right-radius: 23px;
 }
-.sidebar button:hover {
+.sidebar button:hover ,.meeting  button:hover{
    background-color: #f8f8f8;
 }
 .sidebar .navbutton:focus{
     background-color: #f2f2f1;
 }
 .material-icons {
-    padding-right: 20px;
+    padding-right: 13px;
+    padding-left: 13px;
     vertical-align: middle;
-}
-.manage-msg{
-    background-color: blue;
 }
 .in-menu-rit::after {
     content: "";
@@ -238,30 +275,53 @@ a{
     display: table;
   }
   .select{
+      border:1px ridge rgb(240, 237, 237);
       float:left;
-      border:1px solid red;
   }
 .leftdiv{
-    width:18%;
+    margin: 10px 0 5px 8px;
+}
+.msgdiv{
+    float:left;
+    width:70%;
+    vertical-align: middle;
+    margin:10px;
+    background-image:url("images") ;
 }
 .sideimg{
     padding:0;
     border-radius: 40px;
     width:20px;
 }
+.middle{
+    width: 77%;
+}
+.sidebar.inbox{
+    background-color: rgb(248, 183, 183);
+    color: red;
+}
 .middlediv{
-width:100%;
-border: 1px ridge rgb(198, 199, 196);
+border: 1px ridge rgb(253, 252, 252);
 vertical-align:top;
+position:sticky;
 }
 .center{
     float:left;
 }
 .rightfloat{
     float:right;
+    width:200px;
+    margin-left: 70px;
+    margin-right: 30px;
+}
+.rightfloat-widgets{
+    float:right;
+    width:20px;
+    margin-top:20px;
+    margin-right: 10px;
 }
 .navmsg button{
-    padding:6px 5px;
+    padding:6px 8px;
     vertical-align: top;
     margin-bottom: 5px;
     margin-top: 0;
@@ -274,20 +334,43 @@ vertical-align:top;
     padding-right: 6px ;
 }
 .key{
-    width:20px;
+    width:17px;
     vertical-align:middle;
 }
-.arrow{
-    width:5px;
-    vertical-align: top;
-}
 .sections{
-    margin-right: 70px;
+    margin-right: 250px;
 }
 .widgets-img{
     width:20px;
     margin-bottom: 50px;
 }
 .widgets{
-    width:2%;
+    margin-top:20px;
+    width:20px;
+    float:right;
+    margin-right:10px;
 }
+.content-check{
+    width:16px;
+
+}
+.msg-content{
+    padding-left: 160px;
+    font-size: 15px;
+}
+
+  .msgdiv:hover{
+    border-bottom: 1px ridge grey;
+  }
+  .bottom {
+    position: absolute;
+    bottom:10;
+    left: 90;
+  }
+  .bottom-img{
+    width:15px;
+    padding-right: 14px;
+  }
+  .mainmenu>div{
+    display: inline-block;
+  }
