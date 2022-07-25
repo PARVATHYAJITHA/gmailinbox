@@ -1,16 +1,14 @@
 *{
     padding:0;
     margin:0;
-}
-body {
-    font-family: "Lato", sans-serif;
+	  font-family: Arial;
 }
 .leftside{
     background-color: antiquewhite;
     width:100%;
 }
 .compose {
-    width:148px;
+    width:150px;
     border-radius: 25%;    
 }
 
@@ -19,32 +17,34 @@ body {
 }
 .head-container{
     display:flex;
-	direction:row;
+	margin-top:10px;
 }
 .left-head{
+	display:flex;
+	margin:10px;
     float: left;
     vertical-align: middle;
-    padding: 20px;
 }
 .menuicon{
     width:20px;
-    padding-right: 10px;
+	padding:13px;
 }
 .gmail{
-    width:105px;
+    width:100px;
     padding-right: 50px;
+	margin:10px;
 }
 .middle-head{
     float: left;
-	width:62%;
+	width:83%;
     position:relative;
     padding-right:30px;
-    margin-top:10px;
     padding-left: 20px;
 }
 .search-btn{
     padding:15px 20px 15px 60px ;
-    width:85%;
+	margin-right:10px;
+    width:60%;
     font-size: 15px;
     border: none;
     border-radius: 10px;
@@ -55,40 +55,36 @@ body {
 .search-icon{
     width:20px;
     top:10px;
-    left:20px;
+    left:5px;
     position:relative;
 }
 .show-opt{
     width:20px;
     top:15px;
-    right:130px;
-    position:absolute;
+    left:55%;
+    position:relative;
 }
 .right-head{
- 
     float:right;
     vertical-align: middle;
     right:0px;
     top:0px;
-    position: fixed;
-    margin-left:20px;
-    padding-right: 10px;
+    position: absolute;
+	margin-top:10px;
 }
 .right-pics{
     width:20px;
-    margin-left:20px;
-    margin-top:20px;
+	margin:15px;
 }
 .right{
     float:right;
     vertical-align: middle;
     padding-top: 8px;
-    padding-right: 8px;
-    margin-right: 6px;
-    margin-top: 5px;
+    margin: 5px 0;
 }
 .msg-head{
-    padding-right: 250px;
+
+    font-size: 10px;
 }
 .search-btn:focus{
     background-color: white;
@@ -104,7 +100,6 @@ body {
     margin-left: 8px;
 }
 .in-menu-rit{
-    float: right;
     vertical-align: middle;
 }
 .help{
@@ -119,6 +114,7 @@ body {
 .toggle{
     width:20px;
     margin-left:18px ;
+	margin-right:10px;
 }
 a{
     color:grey;
@@ -126,8 +122,9 @@ a{
     padding-right: 8px;
 }
 .msg-toggle{
-    padding:10px 0;
-    border: 1px ridge rgb(218, 213, 213);
+    padding:10px;
+	border:none;
+    border-bottom: 1px ridge rgb(218, 213, 213);
 }
 .arrow{
     width:40px;
@@ -141,32 +138,33 @@ a{
 }
 .primary  img,.social img,.promotion img{
 
-    width:20px;
+    width:10%;
     padding-right: 10px;
 }
 .heading{
-    padding-left:5px;
-    font-size: 15px;
-    position: fixed;
+    padding-left:35px;
+    font-size: 14px;
+    position: relative;
     width:30%;
 }
 
 .primary ,.social ,.promotion{
     border-bottom:1px transparent grey;
     float:left;
-    padding:20px 150px 10px 50px;
+    padding:20px 16% 15px 50px;
     vertical-align: middle;
     font: 16px;
     text-align:center;
     background-color: white;
+	margin-bottom:20px;
 }
 .primary{
     background-repeat: no-repeat;
     background-position: 8% center;
     background-image: url("back/inbox.png");
-    color:red;
+    color:#ab332b;
     border: none;
-    border-bottom: 4px solid red;
+    border-bottom: 3px solid red;
 }
 .social{
     background-image: url("back/socia-black.png");
@@ -236,7 +234,8 @@ a{
 }
 .sidebar .inbox-red{
     background-color: rgb(252, 216, 216);
-    color: red;
+    color: #ab332b;
+	font-weight:bold;
 }
 .sidebar  .navbutton, .meeting  .navbutton{
     text-decoration: none;
@@ -266,9 +265,8 @@ a{
 .in-menu-rit::after {
     content: "";
     clear: both;
-    display: table;
   }
-  .select{
+.select{
       border:1px ridge rgb(240, 237, 237);
       float:left;
   }
@@ -276,10 +274,14 @@ a{
     margin: 10px 0 5px 8px;
 }
 .msgdiv{
-    float:left;
+	font-size:12px;
+    display:flex;
     width:100%;
     vertical-align: middle;
-    margin:10px;
+    margin-top:20px;
+	position:relative;
+	top:90px;
+	padding-left:16px;
 }
 .sideimg{
     padding:0;
@@ -287,32 +289,33 @@ a{
     width:20px;
 }
 .middle{
-    width: 78%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position:absolute;
     left:250px;
 }
 
 .middlediv{
-border: 1px ridge rgb(253, 252, 252);
-vertical-align:top;
-position:sticky;
+	border: 1px ridge rgb(253, 252, 252);
+	vertical-align:top;
+	position:absolute;
+	width:100%;
 }
 .center{
     float:left;
 }
 .rightfloat{
     float:right;
-    width:200px;
-    margin-left: 70px;
-    margin-right: 30px;
 }
 .rightfloat-widgets{
     float:right;
     width:20px;
     margin-top:20px;
     margin-right: 10px;
+}
+.clear{
+	clear:both;
 }
 .navmsg button{
     padding:6px 8px;
@@ -336,45 +339,91 @@ position:sticky;
     width:100%;
 }
 .widgets-img{
-    width:20px;
+    width:90%;
     margin-bottom: 50px;
+	
 }
 .widgets{
-    margin-top:20px;
-    width:20px;
+    width:10px;
+	margin-top:50px;
     float:right;
-    margin-right:10px;
-    position:fixed;
-    right:0px;
+    position:relative;
+	right:10px;
 }
 .content-check{
-    width:16px;
-    padding:0  10px;
+    width:15px;
+    padding:5px  10px;
 
 }
 .msg-content{
-    margin-left: 160px;
-    font-size: 15px;
+    margin-left: 10%;
+    font-size: 14px;
     width:90%;
 }
 .time{
-    padding-left:100px;
     float: right;
     width:10%;
-    font:10px;
+    font-size:14px;
+	padding-right:5px;
 }
 
-  .msgdiv:hover{
+.msgdiv:hover{
     box-shadow: 5px 5px 11px #dfdddd;
-
-    width:99%;
   }
-  .bottom {
+ .bottom {
     position: absolute;
     bottom:10;
     left: 90;
-  }
-  .bottom-img{
+}
+.bottom-img{
     width:15px;
     padding-right: 14px;
   }
+
+
+@media screen and (max-width: 1250px) {
+ 
+	.sections button{
+		padding-right:10%;
+	}
+	
+}
+@media screen and (max-width: 1200px) {
+
+	.sections .promotion{
+		visibility:hidden;
+	
+}
+@media screen and (max-width: 900px) {
+
+	.helpicon{
+		visibility:hidden;
+	}
+	
+}
+@media screen and (max-width: 700px) {
+
+	.settings{
+		visibility:hidden;
+	
+	}
+}
+@media screen and (max-width: 600px) {
+
+	.dots{
+		visibility:hidden;
+	
+	}
+}
+@media screen and (max-width: 400px) {
+
+	.pro{
+		visibility:hidden;
+	
+	}
+}
+
+
+
+
+
