@@ -14,15 +14,18 @@
 
 .main-container{
     width:100%;
+	display:flex;
 }
 .head-container{
     display:flex;
 	margin-top:10px;
 }
+.body-container{
+	display:flex;
+}
 .left-head{
 	display:flex;
 	margin:10px;
-    float: left;
     vertical-align: middle;
 }
 .menuicon{
@@ -35,8 +38,7 @@
 	margin:10px;
 }
 .middle-head{
-    float: left;
-	width:83%;
+	width:80%;
     position:relative;
     padding-right:30px;
     padding-left: 20px;
@@ -44,7 +46,7 @@
 .search-btn{
     padding:15px 20px 15px 60px ;
 	margin-right:10px;
-    width:60%;
+    width:80%;
     font-size: 15px;
     border: none;
     border-radius: 10px;
@@ -61,23 +63,21 @@
 .show-opt{
     width:20px;
     top:15px;
-    left:55%;
+    left:75%;
     position:relative;
 }
 .right-head{
-    float:right;
     vertical-align: middle;
     right:0px;
     top:0px;
-    position: absolute;
-	margin-top:10px;
+    position: relative;
+	white-space: nowrap ;
 }
 .right-pics{
     width:20px;
-	margin:15px;
+	margin:0 10px;
 }
 .right{
-    float:right;
     vertical-align: middle;
     padding-top: 8px;
     margin: 5px 0;
@@ -112,7 +112,7 @@
     vertical-align: middle;
 }
 .toggle{
-    width:20px;
+    width:17px;
     margin-left:18px ;
 	margin-right:10px;
 }
@@ -142,21 +142,22 @@ a{
     padding-right: 10px;
 }
 .heading{
-    padding-left:35px;
+    padding:0 35px;
     font-size: 14px;
     position: relative;
-    width:30%;
+	white-space: nowrap ;
+	margin-right:10px;
+	width:40%;
+	
 }
 
 .primary ,.social ,.promotion{
     border-bottom:1px transparent grey;
-    float:left;
     padding:20px 16% 15px 50px;
     vertical-align: middle;
     font: 16px;
     text-align:center;
     background-color: white;
-	margin-bottom:20px;
 }
 .primary{
     background-repeat: no-repeat;
@@ -268,7 +269,7 @@ a{
   }
 .select{
       border:1px ridge rgb(240, 237, 237);
-      float:left;
+ 
   }
 .leftdiv{
     margin: 10px 0 5px 8px;
@@ -276,11 +277,11 @@ a{
 .msgdiv{
 	font-size:12px;
     display:flex;
-    width:100%;
+	 flex-wrap: wrap;
     vertical-align: middle;
-    margin-top:20px;
+    margin:6px 0;
 	position:relative;
-	top:90px;
+	top:100px;
 	padding-left:16px;
 }
 .sideimg{
@@ -289,11 +290,10 @@ a{
     width:20px;
 }
 .middle{
+	clear:both;
     width: 80%;
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    left:250px;
+    position:relative;
+    left:10px;
 }
 
 .middlediv{
@@ -302,18 +302,10 @@ a{
 	position:absolute;
 	width:100%;
 }
-.center{
-    float:left;
-}
 .rightfloat{
     float:right;
 }
-.rightfloat-widgets{
-    float:right;
-    width:20px;
-    margin-top:20px;
-    margin-right: 10px;
-}
+
 .clear{
 	clear:both;
 }
@@ -343,26 +335,19 @@ a{
     margin-bottom: 50px;
 	
 }
-.widgets{
-    width:10px;
-	margin-top:50px;
-    float:right;
-    position:relative;
-	right:10px;
-}
 .content-check{
     width:15px;
     padding:5px  10px;
 
 }
 .msg-content{
-    margin-left: 10%;
+    margin:0  10%;
     font-size: 14px;
-    width:90%;
+	white-space: nowrap ;
+	overflow:hidden;
 }
 .time{
-    float: right;
-    width:10%;
+	 white-space: nowrap ;
     font-size:14px;
 	padding-right:5px;
 }
@@ -388,42 +373,76 @@ a{
 	}
 	
 }
-@media screen and (max-width: 1200px) {
 
-	.sections .promotion{
-		visibility:hidden;
-	
-}
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 
-	.helpicon{
-		visibility:hidden;
-	}
-	
-}
-@media screen and (max-width: 700px) {
-
-	.settings{
-		visibility:hidden;
+	.heading ,.msg-content , .time{
+		font-size:10px;
 	
 	}
-}
-@media screen and (max-width: 600px) {
-
-	.dots{
-		visibility:hidden;
-	
+	.time{
+		padding-left:10px;
 	}
-}
-@media screen and (max-width: 400px) {
-
-	.pro{
-		visibility:hidden;
-	
+	.msg-content{
+		width:40%;
+		padding-right:10px;
+		overflow:hidden;
 	}
+	.heading{
+		width:15%;
+		padding-left:5px;
+		padding-right:5px;
+	}
+	.content-check{
+		width:10px;
+	}
+	.primary ,.social ,.promotion{
+		padding:10px 15px 10px 40px;
+	}
+	.right-pics{
+		width:18px;
+		margin-top:10px;
+		margin-left:2px;
+	}
+	.left-head{
+		margin:3px;
+	}
+	.menuicon{
+		width:15px;
+	}
+	.gmail
+	{
+		margin:8px;
+		width:90px;
+	}
+	.search-btn{
+		padding: 10px 20px 10px 25px;
+		margin:5px 0;
+		width:95%;
+	}
+	.middle-head{
+		padding:2px 2px;
+	}
+	.head-container{
+		margin:0;
+	}
+	.search-icon{
+		top:14px;
+		width:15px;
+	}
+	.show-opt{
+		width:15px;
+		top:14px;
+		left:350px;
+	}
+	.compose{
+		width:100px;
+	}
+	.sidebar , .meeting, .hangouts{
+		width:200px;
+	}
+
 }
-
-
 
 
 
