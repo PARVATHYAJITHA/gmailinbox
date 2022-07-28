@@ -38,7 +38,7 @@
 	margin:10px;
 }
 .middle-head{
-	width:80%;
+	width:50%;
     position:relative;
     padding-right:30px;
     padding-left: 20px;
@@ -46,7 +46,7 @@
 .search-btn{
     padding:15px 20px 15px 60px ;
 	margin-right:10px;
-    width:80%;
+    width:90%;
     font-size: 15px;
     border: none;
     border-radius: 10px;
@@ -61,21 +61,22 @@
     position:relative;
 }
 .show-opt{
+	 position:relative;
     width:20px;
     top:15px;
-    left:75%;
-    position:relative;
+    left:77%;
+   
 }
 .right-head{
     vertical-align: middle;
+	float:right;
     right:0px;
     top:0px;
-    position: relative;
-	white-space: nowrap ;
+    position:absolute;
 }
 .right-pics{
     width:20px;
-	margin:0 10px;
+	margin:8px 0 8px 20px ;
 }
 .right{
     vertical-align: middle;
@@ -142,12 +143,12 @@ a{
     padding-right: 10px;
 }
 .heading{
-    padding:0 35px;
+	 white-space: nowrap;
+    margin:0 25px;
     font-size: 14px;
     position: relative;
-	white-space: nowrap ;
-	margin-right:10px;
-	width:40%;
+	width:15%;
+	
 	
 }
 
@@ -281,9 +282,11 @@ a{
     vertical-align: middle;
     margin:6px 0;
 	position:relative;
-	top:100px;
+	top:110px;
 	padding-left:16px;
+	width:100%;
 }
+
 .sideimg{
     padding:0;
     border-radius: 40px;
@@ -291,7 +294,7 @@ a{
 }
 .middle{
 	clear:both;
-    width: 80%;
+    width: 93%;
     position:relative;
     left:10px;
 }
@@ -300,7 +303,7 @@ a{
 	border: 1px ridge rgb(253, 252, 252);
 	vertical-align:top;
 	position:absolute;
-	width:100%;
+	width:98%;
 }
 .rightfloat{
     float:right;
@@ -341,15 +344,21 @@ a{
 
 }
 .msg-content{
-    margin:0  10%;
     font-size: 14px;
-	white-space: nowrap ;
-	overflow:hidden;
+	padding:0 10px;
+	display:inline-block;
+	 white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+	width:60%;
+	position:relative;
+	margin:0 20px;
 }
 .time{
 	 white-space: nowrap ;
     font-size:14px;
 	padding-right:5px;
+	float:right;
 }
 
 .msgdiv:hover{
@@ -366,13 +375,6 @@ a{
   }
 
 
-@media screen and (max-width: 1250px) {
- 
-	.sections button{
-		padding-right:10%;
-	}
-	
-}
 
 @media screen and (max-width: 800px) {
 
@@ -418,7 +420,7 @@ a{
 	.search-btn{
 		padding: 10px 20px 10px 25px;
 		margin:5px 0;
-		width:95%;
+		width:80%;
 	}
 	.middle-head{
 		padding:2px 2px;
@@ -443,6 +445,177 @@ a{
 	}
 
 }
+@media screen and (max-width: 1500px) {
+
+	.heading ,.msg-content , .time{
+		font-size:10px;
+	
+	}
+	.msg-content{
+		width:60%;
+	}
+}
+@media screen and (max-width: 1200px) {
+
+	.heading ,.msg-content , .time{
+		font-size:12px;
+	
+	}
+	.msg-content{
+		width:45%;
+	}
+	.middle-head{
+		width:50%;
+	}
+	.right-pics{
+		width:20px;
+		margin:20px 10px;
+	}
+	.pro{
+		width:30px;
+	}
+	.sections button{
+		padding-right:10%;
+	}
+	.sidebar  .navbutton, .meeting  .navbutton{
+		font-size:13px;
+	}
+}
 
 
 
+@media screen and (max-width: 800px) {
+
+	.heading ,.msg-content , .time{
+		font-size:11px;
+	}
+	.search-btn{
+		width:90%;
+	}
+	.middle-head{
+		width:70%;
+	}
+
+	.right-pics{
+		width:17px;
+		margin-left:3px;
+		margin-top:6px;
+	}
+	.pro{
+		width:25px;
+	}
+	.msg-content{
+		width:43%;
+	}
+		.sidebar  .navbutton, .meeting  .navbutton{
+		font-size:11px;
+	}
+
+}
+@media screen and (max-width: 1000px) {
+	.right-head{
+		right:6;
+		display:flex;
+		}
+
+	.right-pics{
+		width:20px;
+		margin-left:3px;
+		margin-top:20px;
+	}
+	.middle-head{
+		width:80%;
+		margin-right:10px;
+}
+	.show-opt{
+		left:65%;
+}
+	.search-btn{
+		width:70%;
+		padding-right:200px;
+}
+
+}
+@media screen and (max-width: 500px) {
+	.right-head{
+		margin-left:10px;
+		left:500px;
+		display:flex;
+		}
+
+	.right-pics{
+		width:15px;
+		margin-left:3px;
+		margin-top:20px;
+	}
+	.middle-head{
+		width:90%;
+		margin-right:10px;
+}
+	.show-opt{
+		left:260px;
+}
+	.search-btn{
+		width:300px;
+		padding-right:20px;
+}
+	.msgdiv{
+		padding:2px;
+		margin:2px;
+
+	}
+	.msg-content{
+		width:20%;
+}
+	.sections button{
+		padding-right:20px;
+		font-size:10px;
+	}
+
+}
+@media screen and (max-width: 400px) {
+	.right-head{
+		margin-left:5px;
+		left:450px;
+		display:flex;
+		}
+
+	.right-pics{
+		width:15px;
+		margin-left:3px;
+		margin-top:20px;
+	}
+	.middle-head{
+		width:90%;
+		margin-right:10px;
+}
+	.show-opt{
+		left:200px;
+}
+	.search-btn{
+		width:250px;
+		padding-right:20px;
+}
+	.toggle {
+		font-size:10px;
+		width:6px;
+		}
+	.rightfloat{
+		visibility:hidden;
+	}
+	.msg-toggle{
+		padding:2px;
+}
+.sections button{
+		padding-right:10px;
+		font-size:10px;
+	}
+		.msg-content{
+		width:15%;
+}
+	.heading{
+		width:10%;
+}
+
+
+}
